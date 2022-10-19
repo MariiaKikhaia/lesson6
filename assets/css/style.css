@@ -1,0 +1,50 @@
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.header {
+  min-height: 100px;
+  margin-bottom: 1em;
+  background-color: yellow;
+}
+.main {
+  min-height: 380px;
+  background-color: red;
+  flex-grow: 3;
+}
+.flex-box {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.item {
+  flex-basis: 25%;
+  min-height: 120px;
+  flex-grow: 1;
+  background-color: gray;
+  overflow: hidden;
+}
+.left {
+  max-height: 500px;
+  background-color: green;
+  flex-basis: 300px;
+  order: -1;
+}
+.right {
+  max-height: 500px;
+  background-color: blue;
+  flex-basis: 200px;
+}
+.footer {
+  min-height: 100px;
+  margin-top: 1em;
+  background-color: magenta;
+}
